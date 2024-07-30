@@ -1,5 +1,5 @@
-torch
+torch==1.10
 numpy
 dill
 tqdm
-torchtext
+torchtext==0.11
