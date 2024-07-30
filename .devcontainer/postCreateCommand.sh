@@ -37,5 +37,9 @@ cd $WORKSPACE_FOLDER
 pipenv --python 3.6
 pipenv install -r requirements.txt
 
+# Install
+cd $WORKSPACE_FOLDER
+pipenv run python setup.py install
+
 #apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
 #apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
