@@ -64,12 +64,12 @@ else:
     max_len = 50
     def len_filter(example):
         return len(example.src) <= max_len and len(example.tgt) <= max_len
-    train = torchtext.data.TabularDataset(
+    train = torchtext.legacy.data.TabularDataset(
         path=opt.train_path, format='tsv',
         fields=[('src', src), ('tgt', tgt)],
         filter_pred=len_filter
     )
-    dev = torchtext.data.TabularDataset(
+    dev = torchtext.legacy.data.TabularDataset(
         path=opt.dev_path, format='tsv',
         fields=[('src', src), ('tgt', tgt)],
         filter_pred=len_filter
